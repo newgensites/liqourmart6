@@ -17,11 +17,14 @@
   <!-- Top Notice -->
   <div class="topbar">
     <div class="container topbar-inner">
-      <span class="topbar-item">Accepts <strong>Cash, Card & Contactless Payments</strong></span>
+      <span class="topbar-item" data-i18n="topbarPayments" data-i18n-html="true">Accepts <strong>Cash, Card & Contactless Payments</strong></span>
       <span class="topbar-dot" aria-hidden="true"></span>
-      <a class="topbar-item link" href="tel:+19545989292">Call: (954) 598-9292</a>
+      <a class="topbar-item link" data-i18n="topbarCall" href="tel:+19545989292">Call: (954) 598-9292</a>
       <span class="topbar-spacer"></span>
-      <a class="topbar-item link" href="index.html">Home</a>
+      <a class="topbar-item link" data-i18n="homeLink" href="index.html">Home</a>
+      <button class="topbar-item topbar-btn" id="languageToggle" type="button" aria-label="Switch to Spanish" aria-pressed="false">
+        Español
+      </button>
     </div>
   </div>
 
@@ -37,12 +40,12 @@
       </a>
 
       <nav class="nav" aria-label="Primary navigation">
-        <a class="nav-link" href="index.html#order">Order Pickup</a>
-        <a class="nav-link" href="index.html#featured">Shop</a>
-        <a class="nav-link" href="index.html#hours">Hours</a>
-        <a class="nav-link" href="index.html#location">Location</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-        <a class="btn btn-gold btn-sm" href="tel:+19545989292">Call Now</a>
+        <a class="nav-link" data-i18n="navOrder" href="index.html#order">Order Pickup</a>
+        <a class="nav-link" data-i18n="navShop" href="index.html#featured">Shop</a>
+        <a class="nav-link" data-i18n="navHours" href="index.html#hours">Hours</a>
+        <a class="nav-link" data-i18n="navLocation" href="index.html#location">Location</a>
+        <a class="nav-link" data-i18n="navContact" href="contact.html">Contact</a>
+        <a class="btn btn-gold btn-sm" data-i18n="callNow" href="tel:+19545989292">Call Now</a>
       </nav>
 
       <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
@@ -53,14 +56,14 @@
     <!-- Mobile menu -->
     <div class="mobile-nav" id="mobileNav" aria-hidden="true">
       <div class="container mobile-nav-inner">
-        <a href="index.html#order" class="mobile-link">Order Pickup</a>
-        <a href="index.html#featured" class="mobile-link">Shop</a>
-        <a href="index.html#hours" class="mobile-link">Hours</a>
-        <a href="index.html#location" class="mobile-link">Location</a>
-        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="index.html#order" class="mobile-link" data-i18n="navOrder">Order Pickup</a>
+        <a href="index.html#featured" class="mobile-link" data-i18n="navShop">Shop</a>
+        <a href="index.html#hours" class="mobile-link" data-i18n="navHours">Hours</a>
+        <a href="index.html#location" class="mobile-link" data-i18n="navLocation">Location</a>
+        <a href="contact.html" class="mobile-link" data-i18n="navContact">Contact</a>
         <div class="mobile-cta">
-          <a class="btn btn-gold" href="tel:+19545989292">Call (954) 598-9292</a>
-          <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.google.com/maps?q=15825+Sheridan+St+Suite+135,+Fort+Lauderdale,+FL+33331">
+          <a class="btn btn-gold" data-i18n="callStoreNumber" href="tel:+19545989292">Call (954) 598-9292</a>
+          <a class="btn btn-ghost" data-i18n="getDirections" target="_blank" rel="noopener" href="https://www.google.com/maps?q=15825+Sheridan+St+Suite+135,+Fort+Lauderdale,+FL+33331">
             Get Directions
           </a>
         </div>
@@ -71,15 +74,15 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <h1 class="page-title">Contact</h1>
-        <p class="page-sub">
+        <h1 class="page-title" data-i18n="contactPage">Contact</h1>
+        <p class="page-sub" data-i18n="contactIntro" data-i18n-html="true">
           Call the store for quickest answers. Or send a message below and we’ll follow up.
           <strong>Cash, card, and contactless payments accepted.</strong>
         </p>
 
         <div class="cta-row" style="margin-top:14px;">
-          <a class="btn btn-gold" href="tel:+19545989292">Call (954) 598-9292</a>
-          <a class="btn btn-ghost" target="_blank" rel="noopener"
+          <a class="btn btn-gold" data-i18n="callStoreNumber" href="tel:+19545989292">Call (954) 598-9292</a>
+          <a class="btn btn-ghost" data-i18n="getDirections" target="_blank" rel="noopener"
              href="https://www.google.com/maps?q=15825+Sheridan+St+Suite+135,+Fort+Lauderdale,+FL+33331">
             Get Directions
           </a>
@@ -87,85 +90,83 @@
 
         <div class="split" style="margin-top:18px;">
           <div class="form-wrap">
-            <h2 style="margin:0 0 10px; font-family:var(--serif);">Send a Message</h2>
-            <p class="muted small" style="margin:0 0 14px;">
+            <h2 style="margin:0 0 10px; font-family:var(--serif);" data-i18n="sendMessageHeading">Send a Message</h2>
+            <p class="muted small" style="margin:0 0 14px;" data-i18n="sendMessageCopy">
               This opens your email app to send the message (no backend needed yet).
             </p>
 
             <form id="contactForm">
               <div class="form-grid">
                 <div class="field">
-                  <label for="name">Name</label>
-                  <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" />
+                  <label for="name" data-i18n="nameLabel">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" data-i18n="namePlaceholder" data-i18n-attr="placeholder" />
                 </div>
                 <div class="field">
-                  <label for="phone">Phone</label>
-                  <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(###) ###-####" />
+                  <label for="phone" data-i18n="phoneLabel">Phone</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(###) ###-####" data-i18n="phonePlaceholder" data-i18n-attr="placeholder" />
                 </div>
                 <div class="field">
-                  <label for="email">Email</label>
-                  <input id="email" name="email" type="email" autocomplete="email" placeholder="you@email.com" />
+                  <label for="email" data-i18n="emailLabel">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" placeholder="you@email.com" data-i18n="emailPlaceholder" data-i18n-attr="placeholder" />
                 </div>
                 <div class="field">
-                  <label for="topic">Topic</label>
-                  <input id="topic" name="topic" type="text" placeholder="Availability / Hours / Other" />
+                  <label for="topic" data-i18n="topicLabel">Topic</label>
+                  <input id="topic" name="topic" type="text" placeholder="Availability / Hours / Other" data-i18n="topicPlaceholder" data-i18n-attr="placeholder" />
                 </div>
               </div>
 
               <div class="field" style="margin-top:12px;">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="What can we help you with?"></textarea>
+                <label for="message" data-i18n="messageLabel">Message</label>
+                <textarea id="message" name="message" placeholder="What can we help you with?" data-i18n="messagePlaceholder" data-i18n-attr="placeholder"></textarea>
               </div>
 
               <div class="cta-row" style="margin-top:12px;">
-                <button class="btn btn-gold" type="submit">Open Email Draft</button>
-                <a class="btn btn-ghost" href="index.html">Back to Home</a>
+                <button class="btn btn-gold" data-i18n="openEmail" type="submit">Open Email Draft</button>
+                <a class="btn btn-ghost" data-i18n="backHome" href="index.html">Back to Home</a>
               </div>
 
-              <p class="tiny muted" style="margin-top:12px;">
+              <p class="tiny muted" style="margin-top:12px;" data-i18n="drinkResponsibly">
                 Please drink responsibly. Must be 21+.
               </p>
             </form>
           </div>
 
           <div class="info-panel">
-            <h2 style="margin:0 0 6px; font-family:var(--serif);">Store Info</h2>
-            <p class="muted small" style="margin:0 0 10px;">
-              Liquor Mart 6 / Flo Liquors
-            </p>
+            <h2 style="margin:0 0 6px; font-family:var(--serif);" data-i18n="storeInfo">Store Info</h2>
+            <p class="muted small" style="margin:0 0 10px;" data-i18n="storeName">Liquor Mart 6 / Flo Liquors</p>
 
             <div class="info-line">
-              <div class="info-label">Phone</div>
+              <div class="info-label" data-i18n="phoneLabel">Phone</div>
               <a class="info-value link" href="tel:+19545989292">(954) 598-9292</a>
             </div>
             <div class="info-line">
-              <div class="info-label">Address</div>
+              <div class="info-label" data-i18n="addressLabel">Address</div>
               <div class="info-value">
                 15825 Sheridan St, Suite 135<br />
                 Fort Lauderdale, FL 33331
               </div>
             </div>
             <div class="info-line">
-              <div class="info-label">Payments</div>
-              <div class="info-value">Cash, cards, and contactless accepted</div>
+              <div class="info-label" data-i18n="paymentsLabel">Payments</div>
+              <div class="info-value" data-i18n="paymentsValue">Cash, cards, and contactless accepted</div>
             </div>
 
             <div class="divider"></div>
 
             <div class="mini">
-              <div class="mini-label">Hours</div>
-              <div class="mini-value">
+              <div class="mini-label" data-i18n="hoursLabel">Hours</div>
+              <div class="mini-value" data-i18n="miniHours" data-i18n-html="true">
                 Sun – Thu: 10:00 AM – 12:00 AM<br />
                 Fri – Sat: 10:00 AM – 1:00 AM
               </div>
             </div>
 
             <div class="hero-card-actions" style="margin-top:14px;">
-              <a class="btn btn-gold btn-block" target="_blank" rel="noopener"
+              <a class="btn btn-gold btn-block" data-i18n="openMap" target="_blank" rel="noopener"
                  href="https://www.google.com/maps?q=15825+Sheridan+St+Suite+135,+Fort+Lauderdale,+FL+33331">
                 Open Map
               </a>
-              <a class="btn btn-ghost btn-block" href="tel:+19545989292">Call Store</a>
+              <a class="btn btn-ghost btn-block" data-i18n="callStoreGeneric" href="tel:+19545989292">Call Store</a>
             </div>
           </div>
         </div>
@@ -193,7 +194,7 @@
           <span class="brand-mark" aria-hidden="true">LM</span>
           <div>
             <div class="footer-title">Liquor Mart 6</div>
-            <div class="footer-sub muted">Flo Liquors • Fort Lauderdale, FL</div>
+            <div class="footer-sub muted" data-i18n="footerSub">Flo Liquors • Fort Lauderdale, FL</div>
           </div>
         </div>
 
@@ -206,16 +207,16 @@
           </a>
         </div>
 
-        <p class="tiny muted">
+        <p class="tiny muted" data-i18n="footerNotice" data-i18n-html="true">
           © <span id="year"></span> Liquor Mart 6 / Flo Liquors. Please drink responsibly. 21+ only.
         </p>
       </div>
 
       <div class="footer-right">
-        <a class="footer-link" href="index.html#featured">Shop</a>
-        <a class="footer-link" href="index.html#hours">Hours</a>
-        <a class="footer-link" href="index.html#location">Location</a>
-        <a class="footer-link" href="contact.html">Contact</a>
+        <a class="footer-link" data-i18n="navShop" href="index.html#featured">Shop</a>
+        <a class="footer-link" data-i18n="navHours" href="index.html#hours">Hours</a>
+        <a class="footer-link" data-i18n="navLocation" href="index.html#location">Location</a>
+        <a class="footer-link" data-i18n="navContact" href="contact.html">Contact</a>
       </div>
     </div>
   </footer>
