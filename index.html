@@ -1,1 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0B0B0B" />
+  <title>Liquor Mart 6 / Flo Liquors | Fort Lauderdale, FL</title>
+  <meta name="description" content="Liquor Mart 6 / Flo Liquors in Fort Lauderdale (33331). Premium spirits, wine, beer. Open daily. Contactless payments accepted." />
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="Liquor Mart 6 / Flo Liquors" />
+  <meta property="og:description" content="Premium spirits, wine, and beer in Fort Lauderdale, FL. Open daily. Contactless payments accepted." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="assets/og-cover.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Age Gate -->
+  <div id="ageGate" class="age-gate" aria-hidden="true">
+    <div class="age-card" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+      <div class="age-badge">21+</div>
+      <h2 id="ageTitle">Age Verification</h2>
+      <p class="muted">You must be 21 years or older to enter this website.</p>
+      <div class="age-actions">
+        <button class="btn btn-gold" id="ageYes">I’m 21+</button>
+        <a class="btn btn-ghost" id="ageNo" href="https://www.google.com">I’m not</a>
+      </div>
+      <p class="tiny muted">By continuing, you agree to comply with your local alcohol laws.</p>
+    </div>
+  </div>
+
+  <!-- Top Notice -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span class="topbar-item">Accepts <strong>Contactless Payments</strong></span>
+      <span class="topbar-dot" aria-hidden="true"></span>
+      <a class="topbar-item link" href="tel:+19545989292">Call: (954) 598-9292</a>
+      <span class="topbar-spacer"></span>
+      <button class="topbar-item topbar-btn" id="themePulse" type="button" aria-label="Toggle highlight glow">
+        <span class="pulse-dot" aria-hidden="true"></span> Premium Mode
+      </button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Liquor Mart 6 / Flo Liquors home">
+        <span class="brand-mark" aria-hidden="true">LM</span>
+        <span class="brand-text">
+          <span class="brand-title">Liquor Mart 6</span>
+          <span class="brand-sub">Flo Liquors</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="#featured">Shop</a>
+        <a class="nav-link" href="#hours">Hours</a>
+        <a class="nav-link" href="#location">Location</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="btn btn-gold btn-sm" href="tel:+19545989292">Call Now</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <div class="container mobile-nav-inner">
+        <a href="#featured" class="mobile-link">Shop</a>
+        <a href="#hours" class="mobile-link">Hours</a>
+        <a href="#location" class="mobile-link">Location</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+        <div class="mobile-cta">
+          <a class="btn btn-gold" href="tel:+19545989292">Call (954) 598-9292</a>
+          <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.google.com/maps?q=15701+Sheridan+St,+Fort+Lauderdale,+FL+33331">
+            Get Directions
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <div class="kicker">
+            <span class="kicker-dot" aria-hidden="true"></span>
+            Fort Lauderdale • 33331
+          </div>
+
+          <h1 class="hero-title">
+            Premium spirits.<br />
+            <span class="accent">Luxury selection</span>, fast pickup.
+          </h1>
+
+          <p class="hero-sub">
+            Liquor Mart 6 / Flo Liquors — curated bottles, classics, and favorites.
+            <strong>Contactless payments accepted.</strong>
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="tel:+19545989292">Call to Check Availability</a>
+            <a class="btn btn-ghost" href="#featured">Browse Categories</a>
+          </div>
+
+          <div class="hero-badges" role="list" aria-label="Highlights">
+            <div class="badge" role="listitem">
+              <span class="badge-ico" aria-hidden="true">✦</span>
+              <span>Premium + Everyday Options</span>
+            </div>
+            <div class="badge" role="listitem">
+              <span class="badge-ico" aria-hidden="true">⟡</span>
+              <span>Quick In & Out Pickup</span>
+            </div>
+            <div class="badge" role="listitem">
+              <span class="badge-ico" aria-hidden="true">◈</span>
+              <span>Contactless Payments</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <div class="hero-card-title">Today’s Hours</div>
+              <div class="hero-card-chip" id="openChip" aria-live="polite">Checking…</div>
+            </div>
+
+            <div class="hero-hours">
+              <div class="row">
+                <span class="day">Sun – Thu</span>
+                <span class="time">10:00 AM – 12:00 AM</span>
+              </div>
+              <div class="row">
+                <span class="day">Fri – Sat</span>
+                <span class="time">10:00 AM – 1:00 AM</span>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="mini">
+              <div class="mini-label">Address</div>
+              <div class="mini-value">
+                15701 Sheridan St<br />
+                Fort Lauderdale, FL 33331
+              </div>
+            </div>
+
+            <div class="hero-card-actions">
+              <a class="btn btn-gold btn-block" target="_blank" rel="noopener"
+                 href="https://www.google.com/maps?q=15701+Sheridan+St,+Fort+Lauderdale,+FL+33331">
+                Get Directions
+              </a>
+              <a class="btn btn-ghost btn-block" href="contact.html">Contact / Ask a Question</a>
+            </div>
+
+            <p class="tiny muted">
+              Please drink responsibly. Must be 21+.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="section" id="featured">
+      <div class="container">
+        <div class="section-head">
+          <h2>Shop by Category</h2>
+          <p class="muted">Tap a category to call and check availability (fastest).</p>
+        </div>
+
+        <div class="grid cards">
+          <a class="card" href="tel:+19545989292" aria-label="Call about Whiskey">
+            <div class="card-top">
+              <div class="card-icon">🥃</div>
+              <div class="card-title">Whiskey</div>
+            </div>
+            <p class="card-text">Bourbon, rye, scotch, and top-shelf picks.</p>
+            <span class="card-link">Call to check →</span>
+          </a>
+
+          <a class="card" href="tel:+19545989292" aria-label="Call about Tequila">
+            <div class="card-top">
+              <div class="card-icon">🍋</div>
+              <div class="card-title">Tequila</div>
+            </div>
+            <p class="card-text">Blanco, reposado, añejo, and premium bottles.</p>
+            <span class="card-link">Call to check →</span>
+          </a>
+
+          <a class="card" href="tel:+19545989292" aria-label="Call about Vodka">
+            <div class="card-top">
+              <div class="card-icon">❄️</div>
+              <div class="card-title">Vodka</div>
+            </div>
+            <p class="card-text">Clean classics to flavored favorites.</p>
+            <span class="card-link">Call to check →</span>
+          </a>
+
+          <a class="card" href="tel:+19545989292" aria-label="Call about Wine">
+            <div class="card-top">
+              <div class="card-icon">🍷</div>
+              <div class="card-title">Wine</div>
+            </div>
+            <p class="card-text">Reds, whites, rosé, sparkling, and more.</p>
+            <span class="card-link">Call to check →</span>
+          </a>
+
+          <a class="card" href="tel:+19545989292" aria-label="Call about Beer">
+            <div class="card-top">
+              <div class="card-icon">🍺</div>
+              <div class="card-title">Beer</div>
+            </div>
+            <p class="card-text">Local & popular packs for any night.</p>
+            <span class="card-link">Call to check →</span>
+          </a>
+
+          <a class="card" href="tel:+19545989292" aria-label="Call about Champagne and Sparkling">
+            <div class="card-top">
+              <div class="card-icon">🥂</div>
+              <div class="card-title">Champagne</div>
+            </div>
+            <p class="card-text">Celebrate with sparkling picks.</p>
+            <span class="card-link">Call to check →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hours -->
+    <section class="section section-alt" id="hours">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2>Store Hours</h2>
+            <p class="muted">
+              Open late. Easy pickup. Contactless payments accepted.
+            </p>
+
+            <div class="hours-box">
+              <div class="row">
+                <span class="day">Sunday</span>
+                <span class="time">10:00 AM – 12:00 AM</span>
+              </div>
+              <div class="row">
+                <span class="day">Monday</span>
+                <span class="time">10:00 AM – 12:00 AM</span>
+              </div>
+              <div class="row">
+                <span class="day">Tuesday</span>
+                <span class="time">10:00 AM – 12:00 AM</span>
+              </div>
+              <div class="row">
+                <span class="day">Wednesday</span>
+                <span class="time">10:00 AM – 12:00 AM</span>
+              </div>
+              <div class="row">
+                <span class="day">Thursday</span>
+                <span class="time">10:00 AM – 12:00 AM</span>
+              </div>
+              <div class="row">
+                <span class="day">Friday</span>
+                <span class="time">10:00 AM – 1:00 AM</span>
+              </div>
+              <div class="row">
+                <span class="day">Saturday</span>
+                <span class="time">10:00 AM – 1:00 AM</span>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn btn-gold" href="tel:+19545989292">Call the Store</a>
+              <a class="btn btn-ghost" href="contact.html">Send a Message</a>
+            </div>
+          </div>
+
+          <div class="info-panel">
+            <div class="info-line">
+              <div class="info-label">Phone</div>
+              <a class="info-value link" href="tel:+19545989292">(954) 598-9292</a>
+            </div>
+            <div class="info-line">
+              <div class="info-label">Address</div>
+              <div class="info-value">
+                15701 Sheridan St<br />
+                Fort Lauderdale, FL 33331
+              </div>
+            </div>
+            <div class="info-line">
+              <div class="info-label">Payments</div>
+              <div class="info-value">Contactless accepted</div>
+            </div>
+            <div class="divider"></div>
+            <p class="muted small">
+              Looking for something specific? Call us — we’ll tell you what’s in stock and what’s similar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section class="section" id="location">
+      <div class="container">
+        <div class="section-head">
+          <h2>Find Us</h2>
+          <p class="muted">15701 Sheridan St, Fort Lauderdale, FL 33331</p>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            title="Liquor Mart 6 / Flo Liquors location map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=15701+Sheridan+St,+Fort+Lauderdale,+FL+33331&output=embed">
+          </iframe>
+        </div>
+
+        <div class="map-actions">
+          <a class="btn btn-gold" target="_blank" rel="noopener"
+             href="https://www.google.com/maps?q=15701+Sheridan+St,+Fort+Lauderdale,+FL+33331">
+            Open in Maps
+          </a>
+          <a class="btn btn-ghost" href="#top">Back to top</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true">LM</span>
+          <div>
+            <div class="footer-title">Liquor Mart 6</div>
+            <div class="footer-sub muted">Flo Liquors • Fort Lauderdale, FL</div>
+          </div>
+        </div>
+
+        <div class="footer-meta">
+          <a class="link" href="tel:+19545989292">(954) 598-9292</a>
+          <span class="dot" aria-hidden="true"></span>
+          <a class="link" target="_blank" rel="noopener"
+             href="https://www.google.com/maps?q=15701+Sheridan+St,+Fort+Lauderdale,+FL+33331">
+            15701 Sheridan St, 33331
+          </a>
+        </div>
+
+        <p class="tiny muted">
+          © <span id="year"></span> Liquor Mart 6 / Flo Liquors. Please drink responsibly. 21+ only.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <a class="footer-link" href="#featured">Shop</a>
+        <a class="footer-link" href="#hours">Hours</a>
+        <a class="footer-link" href="#location">Location</a>
+        <a class="footer-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
