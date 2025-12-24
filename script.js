@@ -122,6 +122,34 @@
     }
   }
 
+  // Order pickup form (mailto draft)
+  const orderForm = $("#orderForm");
+  if (orderForm) {
+    orderForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const item = $("#orderItem")?.value?.trim() || "";
+      const sizeOption = $("#bottleSize");
+      const sizeLabel = sizeOption ? sizeOption.options[sizeOption.selectedIndex]?.text || "" : "";
+      const qty = $("#quantity")?.value?.trim() || "";
+      const notes = $("#orderNotes")?.value?.trim() || "";
+
+      const subject = encodeURIComponent("Liquor Mart 6 / Flo Liquors — Pickup order request");
+      const bodyLines = [
+        `Liquor needed: ${item}`,
+        `Bottle size: ${sizeLabel}`,
+        `Quantity: ${qty}`,
+        notes ? `Pickup name / notes: ${notes}` : null,
+        "",
+        "— Sent from website",
+      ].filter(Boolean);
+
+      const body = encodeURIComponent(bodyLines.join("\n"));
+      const to = "flo-liquors@example.com";
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+    });
+  }
+
   // Contact form (mailto fallback) - no backend needed
   const contactForm = $("#contactForm");
   if (contactForm) {

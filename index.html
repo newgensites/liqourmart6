@@ -60,6 +60,7 @@
       </a>
 
       <nav class="nav" aria-label="Primary navigation">
+        <a class="nav-link" href="#order">Order Pickup</a>
         <a class="nav-link" href="#featured">Shop</a>
         <a class="nav-link" href="#hours">Hours</a>
         <a class="nav-link" href="#location">Location</a>
@@ -75,6 +76,7 @@
     <!-- Mobile menu -->
     <div class="mobile-nav" id="mobileNav" aria-hidden="true">
       <div class="container mobile-nav-inner">
+        <a href="#order" class="mobile-link">Order Pickup</a>
         <a href="#featured" class="mobile-link">Shop</a>
         <a href="#hours" class="mobile-link">Hours</a>
         <a href="#location" class="mobile-link">Location</a>
@@ -170,6 +172,69 @@
             <p class="tiny muted">
               Please drink responsibly. Must be 21+.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Pickup -->
+    <section class="section order" id="order">
+      <div class="container">
+        <div class="order-head">
+          <div>
+            <h2>Order online for pickup</h2>
+            <p class="muted">Send your request and we’ll confirm availability fast. Please include what you need, bottle size, and quantity.</p>
+          </div>
+          <a class="btn btn-ghost" href="tel:+19545989292">Call the store</a>
+        </div>
+
+        <div class="order-card">
+          <div class="order-copy">
+            <div class="order-kicker">Pickup ready fast</div>
+            <h3>Tell us what you need</h3>
+            <p class="muted">We’ll pull your bottles and have them waiting. If something’s out of stock, we’ll call with quick alternatives.</p>
+            <ul class="order-points">
+              <li>Typical sizes: minis to 1.75L</li>
+              <li>Contactless payments accepted</li>
+              <li>21+ only; ID required at pickup</li>
+            </ul>
+          </div>
+
+          <div class="form-wrap order-form">
+            <form id="orderForm">
+              <div class="form-grid order-grid">
+                <div class="field">
+                  <label for="orderItem">Liquor needed</label>
+                  <input id="orderItem" name="orderItem" type="text" placeholder="E.g., Don Julio Blanco or Hennessy VS" required />
+                </div>
+                <div class="field">
+                  <label for="bottleSize">Bottle size (fl oz)</label>
+                  <select id="bottleSize" name="bottleSize" required>
+                    <option value="">Select a size</option>
+                    <option value="1.7">50 mL — 1.7 fl oz (mini)</option>
+                    <option value="12.7">375 mL — 12.7 fl oz (pint)</option>
+                    <option value="25.4">750 mL — 25.4 fl oz (standard)</option>
+                    <option value="33.8">1 L — 33.8 fl oz</option>
+                    <option value="59.2">1.75 L — 59.2 fl oz</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="quantity">Quantity</label>
+                  <input id="quantity" name="quantity" type="number" min="1" step="1" value="1" placeholder="How many bottles?" required />
+                </div>
+                <div class="field">
+                  <label for="orderNotes">Pickup name / notes (optional)</label>
+                  <input id="orderNotes" name="orderNotes" type="text" placeholder="Name for pickup, preferred brands, etc." />
+                </div>
+              </div>
+
+              <div class="cta-row" style="margin-top:12px; flex-wrap:wrap; gap:10px;">
+                <button class="btn btn-gold" type="submit">Send pickup request</button>
+                <a class="btn btn-ghost" href="tel:+19545989292">Call instead</a>
+              </div>
+
+              <p class="tiny muted" style="margin-top:12px;">We’ll confirm by phone. Must be 21+ to pick up.</p>
+            </form>
           </div>
         </div>
       </div>
