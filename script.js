@@ -405,14 +405,15 @@
       const item = $("#orderItem")?.value?.trim() || "";
       const sizeOption = $("#bottleSize");
       const sizeLabel = sizeOption ? sizeOption.options[sizeOption.selectedIndex]?.text || "" : "";
-      const qty = $("#quantity")?.value?.trim() || "";
+      const qtyOption = $("#quantity");
+      const qtyLabel = qtyOption ? qtyOption.options[qtyOption.selectedIndex]?.text || "" : "";
       const notes = $("#orderNotes")?.value?.trim() || "";
 
       const subject = encodeURIComponent("Liquor Mart 6 / Flo Liquors — Pickup order request");
       const bodyLines = [
         `Liquor needed: ${item}`,
         `Bottle size: ${sizeLabel}`,
-        `Quantity: ${qty}`,
+        `Quantity: ${qtyLabel}`,
         notes ? `Pickup name / notes: ${notes}` : null,
         "",
         "— Sent from website",
