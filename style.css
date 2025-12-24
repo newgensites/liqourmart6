@@ -616,7 +616,7 @@ label{
   font-size:13px;
   color: rgba(242,242,242,.80);
 }
-input, textarea{
+input, textarea, select{
   border-radius: 14px;
   border: 1px solid rgba(242,242,242,.10);
   background: rgba(11,11,11,.40);
@@ -626,10 +626,40 @@ input, textarea{
   font-family:var(--font);
 }
 textarea{min-height:120px; resize:vertical}
-input:focus, textarea:focus{
+select{color:rgba(242,242,242,.92)}
+input:focus, textarea:focus, select:focus{
   border-color: rgba(201,162,77,.42);
   box-shadow: 0 0 0 4px rgba(201,162,77,.10);
 }
+
+/* Order pickup */
+.order{padding-top:30px;}
+.order-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  flex-wrap:wrap;
+}
+.order-card{
+  margin-top:18px;
+  border-radius: var(--radius2);
+  border: 1px solid rgba(242,242,242,.10);
+  background: linear-gradient(135deg, rgba(17,17,17,.85), rgba(11,11,11,.85));
+  box-shadow: var(--shadow);
+  display:grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap:10px;
+  overflow:hidden;
+}
+.order-copy{padding:20px; display:flex; flex-direction:column; gap:10px; background:rgba(17,17,17,.45);} 
+.order-kicker{font-size:13px; letter-spacing:.2px; color:var(--gold2); text-transform:uppercase; font-weight:700;}
+.order-copy h3{margin:0; font-family:var(--serif); font-size:28px;}
+.order-points{margin:6px 0 0; padding-left:18px; color:var(--muted); line-height:1.55;}
+.order-points li{margin-bottom:6px;}
+.order-form{border:none; background: rgba(11,11,11,.40); border-left:1px solid rgba(242,242,242,.08); border-radius:0;}
+.order-form form{margin:0;}
+.order-grid{grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));}
 
 /* Age Gate */
 .age-gate{
@@ -681,6 +711,7 @@ input:focus, textarea:focus{
   .hero-inner{grid-template-columns: 1fr}
   .cards{grid-template-columns: repeat(2, 1fr)}
   .split{grid-template-columns: 1fr}
+  .order-card{grid-template-columns: 1fr}
 }
 @media (max-width: 520px){
   .cards{grid-template-columns: 1fr}
