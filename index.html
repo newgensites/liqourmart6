@@ -38,12 +38,12 @@
   <!-- Top Notice -->
   <div class="topbar">
     <div class="container topbar-inner">
-      <span class="topbar-item">Accepts <strong>Cash, Card & Contactless Payments</strong></span>
+      <span class="topbar-item" data-i18n="topbarPayments" data-i18n-html="true">Accepts <strong>Cash, Card & Contactless Payments</strong></span>
       <span class="topbar-dot" aria-hidden="true"></span>
-      <a class="topbar-item link" href="tel:+19545989292">Call: (954) 598-9292</a>
+      <a class="topbar-item link" data-i18n="topbarCall" href="tel:+19545989292">Call: (954) 598-9292</a>
       <span class="topbar-spacer"></span>
-      <button class="topbar-item topbar-btn" id="themePulse" type="button" aria-label="Toggle highlight glow">
-        <span class="pulse-dot" aria-hidden="true"></span> Premium Mode
+      <button class="topbar-item topbar-btn" id="languageToggle" type="button" aria-label="Switch to Spanish" aria-pressed="false">
+        Español
       </button>
     </div>
   </div>
@@ -60,12 +60,12 @@
       </a>
 
       <nav class="nav" aria-label="Primary navigation">
-        <a class="nav-link" href="#order">Order Pickup</a>
-        <a class="nav-link" href="#featured">Shop</a>
-        <a class="nav-link" href="#hours">Hours</a>
-        <a class="nav-link" href="#location">Location</a>
-        <a class="nav-link" href="contact.html">Contact</a>
-        <a class="btn btn-gold btn-sm" href="tel:+19545989292">Call Now</a>
+        <a class="nav-link" data-i18n="navOrder" href="#order">Order Pickup</a>
+        <a class="nav-link" data-i18n="navShop" href="#featured">Shop</a>
+        <a class="nav-link" data-i18n="navHours" href="#hours">Hours</a>
+        <a class="nav-link" data-i18n="navLocation" href="#location">Location</a>
+        <a class="nav-link" data-i18n="navContact" href="contact.html">Contact</a>
+        <a class="btn btn-gold btn-sm" data-i18n="callNow" href="tel:+19545989292">Call Now</a>
       </nav>
 
       <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
@@ -76,14 +76,14 @@
     <!-- Mobile menu -->
     <div class="mobile-nav" id="mobileNav" aria-hidden="true">
       <div class="container mobile-nav-inner">
-        <a href="#order" class="mobile-link">Order Pickup</a>
-        <a href="#featured" class="mobile-link">Shop</a>
-        <a href="#hours" class="mobile-link">Hours</a>
-        <a href="#location" class="mobile-link">Location</a>
-        <a href="contact.html" class="mobile-link">Contact</a>
+        <a href="#order" class="mobile-link" data-i18n="navOrder">Order Pickup</a>
+        <a href="#featured" class="mobile-link" data-i18n="navShop">Shop</a>
+        <a href="#hours" class="mobile-link" data-i18n="navHours">Hours</a>
+        <a href="#location" class="mobile-link" data-i18n="navLocation">Location</a>
+        <a href="contact.html" class="mobile-link" data-i18n="navContact">Contact</a>
         <div class="mobile-cta">
-          <a class="btn btn-gold" href="tel:+19545989292">Call (954) 598-9292</a>
-          <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.google.com/maps?q=15825+Sheridan+St+Suite+135,+Fort+Lauderdale,+FL+33331">
+          <a class="btn btn-gold" data-i18n="callStoreNumber" href="tel:+19545989292">Call (954) 598-9292</a>
+          <a class="btn btn-ghost" data-i18n="getDirections" target="_blank" rel="noopener" href="https://www.google.com/maps?q=15825+Sheridan+St+Suite+135,+Fort+Lauderdale,+FL+33331">
             Get Directions
           </a>
         </div>
@@ -97,36 +97,36 @@
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-inner">
         <div class="hero-left">
-          <div class="kicker">
+          <div class="kicker" data-i18n="kickerLocation">
             <span class="kicker-dot" aria-hidden="true"></span>
             Fort Lauderdale • 33331
           </div>
 
-          <h1 class="hero-title">
+          <h1 class="hero-title" data-i18n="heroTitle" data-i18n-html="true">
             Premium spirits.<br />
             <span class="accent">Luxury selection</span>, fast pickup.
           </h1>
 
-          <p class="hero-sub">
+          <p class="hero-sub" data-i18n="heroSub" data-i18n-html="true">
             Liquor Mart 6 / Flo Liquors — curated bottles, classics, and favorites.
             <strong>Cash, card, and contactless payments accepted.</strong>
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-gold" href="tel:+19545989292">Call to Check Availability</a>
-            <a class="btn btn-ghost" href="#featured">Browse Categories</a>
+            <a class="btn btn-gold" data-i18n="callToCheck" href="tel:+19545989292">Call to Check Availability</a>
+            <a class="btn btn-ghost" data-i18n="browseCategories" href="#featured">Browse Categories</a>
           </div>
 
           <div class="hero-badges" role="list" aria-label="Highlights">
-            <div class="badge" role="listitem">
+            <div class="badge" role="listitem" data-i18n="badgePremium">
               <span class="badge-ico" aria-hidden="true">✦</span>
               <span>Premium + Everyday Options</span>
             </div>
-            <div class="badge" role="listitem">
+            <div class="badge" role="listitem" data-i18n="badgePickup">
               <span class="badge-ico" aria-hidden="true">⟡</span>
               <span>Quick In & Out Pickup</span>
             </div>
-            <div class="badge" role="listitem">
+            <div class="badge" role="listitem" data-i18n="badgePayments">
               <span class="badge-ico" aria-hidden="true">◈</span>
               <span>Cash, Card & Contactless Payments</span>
             </div>
@@ -136,17 +136,17 @@
         <div class="hero-right">
           <div class="hero-card">
             <div class="hero-card-top">
-              <div class="hero-card-title">Today’s Hours</div>
+              <div class="hero-card-title" data-i18n="todaysHours">Today’s Hours</div>
               <div class="hero-card-chip" id="openChip" aria-live="polite">Checking…</div>
             </div>
 
             <div class="hero-hours">
               <div class="row">
-                <span class="day">Sun – Thu</span>
+                <span class="day" data-i18n="shortWeekdayRange">Sun – Thu</span>
                 <span class="time">10:00 AM – 12:00 AM</span>
               </div>
               <div class="row">
-                <span class="day">Fri – Sat</span>
+                <span class="day" data-i18n="shortWeekendRange">Fri – Sat</span>
                 <span class="time">10:00 AM – 1:00 AM</span>
               </div>
             </div>
@@ -154,7 +154,7 @@
             <div class="divider"></div>
 
             <div class="mini">
-              <div class="mini-label">Address</div>
+              <div class="mini-label" data-i18n="addressLabel">Address</div>
               <div class="mini-value">
                 15825 Sheridan St, Suite 135<br />
                 Fort Lauderdale, FL 33331
@@ -162,14 +162,14 @@
             </div>
 
             <div class="hero-card-actions">
-              <a class="btn btn-gold btn-block" target="_blank" rel="noopener"
+              <a class="btn btn-gold btn-block" data-i18n="getDirections" target="_blank" rel="noopener"
                  href="https://www.google.com/maps?q=15825+Sheridan+St+Suite+135,+Fort+Lauderdale,+FL+33331">
                 Get Directions
               </a>
-              <a class="btn btn-ghost btn-block" href="contact.html">Contact / Ask a Question</a>
+              <a class="btn btn-ghost btn-block" data-i18n="contactQuestion" href="contact.html">Contact / Ask a Question</a>
             </div>
 
-            <p class="tiny muted">
+            <p class="tiny muted" data-i18n="drinkResponsibly">
               Please drink responsibly. Must be 21+.
             </p>
           </div>
@@ -182,21 +182,21 @@
       <div class="container">
         <div class="order-head">
           <div>
-            <h2>Order online for pickup</h2>
-            <p class="muted">Send your request and we’ll confirm availability fast. Please include what you need, bottle size, and quantity.</p>
+            <h2 data-i18n="orderTitle">Order online for pickup</h2>
+            <p class="muted" data-i18n="orderSubtitle">Send your request and we’ll confirm availability fast. Please include what you need, bottle size, and quantity.</p>
           </div>
-          <a class="btn btn-ghost" href="tel:+19545989292">Call the store</a>
+          <a class="btn btn-ghost" data-i18n="callStoreGeneric" href="tel:+19545989292">Call the store</a>
         </div>
 
         <div class="order-card">
           <div class="order-copy">
-            <div class="order-kicker">Pickup ready fast</div>
-            <h3>Tell us what you need</h3>
-            <p class="muted">We’ll pull your bottles and have them waiting. If something’s out of stock, we’ll call with quick alternatives.</p>
+            <div class="order-kicker" data-i18n="pickupFast">Pickup ready fast</div>
+            <h3 data-i18n="tellUs">Tell us what you need</h3>
+            <p class="muted" data-i18n="orderCopy">We’ll pull your bottles and have them waiting. If something’s out of stock, we’ll call with quick alternatives.</p>
             <ul class="order-points">
-              <li>Typical sizes: minis to 1.75L</li>
-              <li>Contactless payments accepted</li>
-              <li>21+ only; ID required at pickup</li>
+              <li data-i18n="sizes">Typical sizes: minis to 1.75L</li>
+              <li data-i18n="contactless">Contactless payments accepted</li>
+              <li data-i18n="idRequired">21+ only; ID required at pickup</li>
             </ul>
           </div>
 
@@ -204,36 +204,36 @@
             <form id="orderForm">
               <div class="form-grid order-grid">
                 <div class="field">
-                  <label for="orderItem">Liquor needed</label>
-                  <input id="orderItem" name="orderItem" type="text" placeholder="E.g., Don Julio Blanco or Hennessy VS" required />
+                  <label for="orderItem" data-i18n="liquorNeeded">Liquor needed</label>
+                  <input id="orderItem" name="orderItem" type="text" data-i18n="orderItemPlaceholder" data-i18n-attr="placeholder" placeholder="E.g., Don Julio Blanco or Hennessy VS" required />
                 </div>
                 <div class="field">
-                  <label for="bottleSize">Bottle size (fl oz)</label>
+                  <label for="bottleSize" data-i18n="bottleSizeLabel">Bottle size (fl oz)</label>
                   <select id="bottleSize" name="bottleSize" required>
-                    <option value="">Select a size</option>
-                    <option value="1.7">50 mL — 1.7 fl oz (mini)</option>
-                    <option value="12.7">375 mL — 12.7 fl oz (pint)</option>
-                    <option value="25.4">750 mL — 25.4 fl oz (standard)</option>
-                    <option value="33.8">1 L — 33.8 fl oz</option>
-                    <option value="59.2">1.75 L — 59.2 fl oz</option>
+                    <option value="" data-i18n="selectSize">Select a size</option>
+                    <option value="1.7" data-i18n="sizeMini">50 mL — 1.7 fl oz (mini)</option>
+                    <option value="12.7" data-i18n="sizePint">375 mL — 12.7 fl oz (pint)</option>
+                    <option value="25.4" data-i18n="sizeStandard">750 mL — 25.4 fl oz (standard)</option>
+                    <option value="33.8" data-i18n="sizeLiter">1 L — 33.8 fl oz</option>
+                    <option value="59.2" data-i18n="sizeHandle">1.75 L — 59.2 fl oz</option>
                   </select>
                 </div>
                 <div class="field">
-                  <label for="quantity">Quantity</label>
-                  <input id="quantity" name="quantity" type="number" min="1" step="1" value="1" placeholder="How many bottles?" required />
+                  <label for="quantity" data-i18n="quantityLabel">Quantity</label>
+                  <input id="quantity" name="quantity" type="number" min="1" step="1" value="1" placeholder="How many bottles?" data-i18n="quantityPlaceholder" data-i18n-attr="placeholder" required />
                 </div>
                 <div class="field">
-                  <label for="orderNotes">Pickup name / notes (optional)</label>
-                  <input id="orderNotes" name="orderNotes" type="text" placeholder="Name for pickup, preferred brands, etc." />
+                  <label for="orderNotes" data-i18n="pickupNotesLabel">Pickup name / notes (optional)</label>
+                  <input id="orderNotes" name="orderNotes" type="text" data-i18n="pickupNotesPlaceholder" data-i18n-attr="placeholder" placeholder="Name for pickup, preferred brands, etc." />
                 </div>
               </div>
 
               <div class="cta-row" style="margin-top:12px; flex-wrap:wrap; gap:10px;">
-                <button class="btn btn-gold" type="submit">Send pickup request</button>
-                <a class="btn btn-ghost" href="tel:+19545989292">Call instead</a>
+                <button class="btn btn-gold" data-i18n="sendRequest" type="submit">Send pickup request</button>
+                <a class="btn btn-ghost" data-i18n="callInstead" href="tel:+19545989292">Call instead</a>
               </div>
 
-              <p class="tiny muted" style="margin-top:12px;">We’ll confirm by phone. Must be 21+ to pick up.</p>
+              <p class="tiny muted" style="margin-top:12px;" data-i18n="confirmPhone">We’ll confirm by phone. Must be 21+ to pick up.</p>
             </form>
           </div>
         </div>
@@ -244,63 +244,63 @@
     <section class="section" id="featured">
       <div class="container">
         <div class="section-head">
-          <h2>Shop by Category</h2>
-          <p class="muted">Tap a category to call and check availability (fastest).</p>
+          <h2 data-i18n="shopByCategory">Shop by Category</h2>
+          <p class="muted" data-i18n="shopSubtitle">Tap a category to call and check availability (fastest).</p>
         </div>
 
         <div class="grid cards">
           <a class="card" href="tel:+19545989292" aria-label="Call about Whiskey">
             <div class="card-top">
               <div class="card-icon">🥃</div>
-              <div class="card-title">Whiskey</div>
+              <div class="card-title" data-i18n="whiskey">Whiskey</div>
             </div>
-            <p class="card-text">Bourbon, rye, scotch, and top-shelf picks.</p>
-            <span class="card-link">Call to check →</span>
+            <p class="card-text" data-i18n="whiskeyCopy">Bourbon, rye, scotch, and top-shelf picks.</p>
+            <span class="card-link" data-i18n="callToCheckShort">Call to check →</span>
           </a>
 
           <a class="card" href="tel:+19545989292" aria-label="Call about Tequila">
             <div class="card-top">
               <div class="card-icon">🍋</div>
-              <div class="card-title">Tequila</div>
+              <div class="card-title" data-i18n="tequila">Tequila</div>
             </div>
-            <p class="card-text">Blanco, reposado, añejo, and premium bottles.</p>
-            <span class="card-link">Call to check →</span>
+            <p class="card-text" data-i18n="tequilaCopy">Blanco, reposado, añejo, and premium bottles.</p>
+            <span class="card-link" data-i18n="callToCheckShort">Call to check →</span>
           </a>
 
           <a class="card" href="tel:+19545989292" aria-label="Call about Vodka">
             <div class="card-top">
               <div class="card-icon">❄️</div>
-              <div class="card-title">Vodka</div>
+              <div class="card-title" data-i18n="vodka">Vodka</div>
             </div>
-            <p class="card-text">Clean classics to flavored favorites.</p>
-            <span class="card-link">Call to check →</span>
+            <p class="card-text" data-i18n="vodkaCopy">Clean classics to flavored favorites.</p>
+            <span class="card-link" data-i18n="callToCheckShort">Call to check →</span>
           </a>
 
           <a class="card" href="tel:+19545989292" aria-label="Call about Wine">
             <div class="card-top">
               <div class="card-icon">🍷</div>
-              <div class="card-title">Wine</div>
+              <div class="card-title" data-i18n="wine">Wine</div>
             </div>
-            <p class="card-text">Reds, whites, rosé, sparkling, and more.</p>
-            <span class="card-link">Call to check →</span>
+            <p class="card-text" data-i18n="wineCopy">Reds, whites, rosé, sparkling, and more.</p>
+            <span class="card-link" data-i18n="callToCheckShort">Call to check →</span>
           </a>
 
           <a class="card" href="tel:+19545989292" aria-label="Call about Beer">
             <div class="card-top">
               <div class="card-icon">🍺</div>
-              <div class="card-title">Beer</div>
+              <div class="card-title" data-i18n="beer">Beer</div>
             </div>
-            <p class="card-text">Local & popular packs for any night.</p>
-            <span class="card-link">Call to check →</span>
+            <p class="card-text" data-i18n="beerCopy">Local & popular packs for any night.</p>
+            <span class="card-link" data-i18n="callToCheckShort">Call to check →</span>
           </a>
 
           <a class="card" href="tel:+19545989292" aria-label="Call about Champagne and Sparkling">
             <div class="card-top">
               <div class="card-icon">🥂</div>
-              <div class="card-title">Champagne</div>
+              <div class="card-title" data-i18n="champagne">Champagne</div>
             </div>
-            <p class="card-text">Celebrate with sparkling picks.</p>
-            <span class="card-link">Call to check →</span>
+            <p class="card-text" data-i18n="champagneCopy">Celebrate with sparkling picks.</p>
+            <span class="card-link" data-i18n="callToCheckShort">Call to check →</span>
           </a>
         </div>
       </div>
@@ -311,66 +311,66 @@
       <div class="container">
         <div class="split">
           <div>
-            <h2>Store Hours</h2>
-            <p class="muted">
+            <h2 data-i18n="storeHours">Store Hours</h2>
+            <p class="muted" data-i18n="storeHoursCopy">
               Open late. Easy pickup. Cash, card, and contactless payments accepted.
             </p>
 
             <div class="hours-box">
               <div class="row">
-                <span class="day">Sunday</span>
+                <span class="day" data-i18n="sunday">Sunday</span>
                 <span class="time">10:00 AM – 12:00 AM</span>
               </div>
               <div class="row">
-                <span class="day">Monday</span>
+                <span class="day" data-i18n="monday">Monday</span>
                 <span class="time">10:00 AM – 12:00 AM</span>
               </div>
               <div class="row">
-                <span class="day">Tuesday</span>
+                <span class="day" data-i18n="tuesday">Tuesday</span>
                 <span class="time">10:00 AM – 12:00 AM</span>
               </div>
               <div class="row">
-                <span class="day">Wednesday</span>
+                <span class="day" data-i18n="wednesday">Wednesday</span>
                 <span class="time">10:00 AM – 12:00 AM</span>
               </div>
               <div class="row">
-                <span class="day">Thursday</span>
+                <span class="day" data-i18n="thursday">Thursday</span>
                 <span class="time">10:00 AM – 12:00 AM</span>
               </div>
               <div class="row">
-                <span class="day">Friday</span>
+                <span class="day" data-i18n="friday">Friday</span>
                 <span class="time">10:00 AM – 1:00 AM</span>
               </div>
               <div class="row">
-                <span class="day">Saturday</span>
+                <span class="day" data-i18n="saturday">Saturday</span>
                 <span class="time">10:00 AM – 1:00 AM</span>
               </div>
             </div>
 
             <div class="cta-row">
-              <a class="btn btn-gold" href="tel:+19545989292">Call the Store</a>
-              <a class="btn btn-ghost" href="contact.html">Send a Message</a>
+              <a class="btn btn-gold" data-i18n="callStoreGeneric" href="tel:+19545989292">Call the Store</a>
+              <a class="btn btn-ghost" data-i18n="sendMessage" href="contact.html">Send a Message</a>
             </div>
           </div>
 
           <div class="info-panel">
             <div class="info-line">
-              <div class="info-label">Phone</div>
+              <div class="info-label" data-i18n="phoneLabel">Phone</div>
               <a class="info-value link" href="tel:+19545989292">(954) 598-9292</a>
             </div>
             <div class="info-line">
-              <div class="info-label">Address</div>
+              <div class="info-label" data-i18n="addressLabel">Address</div>
               <div class="info-value">
                 15825 Sheridan St, Suite 135<br />
                 Fort Lauderdale, FL 33331
               </div>
             </div>
             <div class="info-line">
-              <div class="info-label">Payments</div>
-              <div class="info-value">Cash, cards, and contactless accepted</div>
+              <div class="info-label" data-i18n="paymentsLabel">Payments</div>
+              <div class="info-value" data-i18n="paymentsValue">Cash, cards, and contactless accepted</div>
             </div>
             <div class="divider"></div>
-            <p class="muted small">
+            <p class="muted small" data-i18n="stockHelp">
               Looking for something specific? Call us — we’ll tell you what’s in stock and what’s similar.
             </p>
           </div>
@@ -382,8 +382,8 @@
     <section class="section" id="location">
       <div class="container">
         <div class="section-head">
-          <h2>Find Us</h2>
-          <p class="muted">15825 Sheridan St, Suite 135, Fort Lauderdale, FL 33331</p>
+          <h2 data-i18n="findUs">Find Us</h2>
+          <p class="muted" data-i18n="addressLine">15825 Sheridan St, Suite 135, Fort Lauderdale, FL 33331</p>
         </div>
 
         <div class="map-wrap">
@@ -396,11 +396,11 @@
         </div>
 
         <div class="map-actions">
-          <a class="btn btn-gold" target="_blank" rel="noopener"
+          <a class="btn btn-gold" data-i18n="openInMaps" target="_blank" rel="noopener"
              href="https://www.google.com/maps?q=15825+Sheridan+St+Suite+135,+Fort+Lauderdale,+FL+33331">
             Open in Maps
           </a>
-          <a class="btn btn-ghost" href="#top">Back to top</a>
+          <a class="btn btn-ghost" data-i18n="backToTop" href="#top">Back to top</a>
         </div>
       </div>
     </section>
@@ -414,7 +414,7 @@
           <span class="brand-mark" aria-hidden="true">LM</span>
           <div>
             <div class="footer-title">Liquor Mart 6</div>
-            <div class="footer-sub muted">Flo Liquors • Fort Lauderdale, FL</div>
+            <div class="footer-sub muted" data-i18n="footerSub">Flo Liquors • Fort Lauderdale, FL</div>
           </div>
         </div>
 
@@ -427,16 +427,16 @@
           </a>
         </div>
 
-        <p class="tiny muted">
+        <p class="tiny muted" data-i18n="footerNotice" data-i18n-html="true">
           © <span id="year"></span> Liquor Mart 6 / Flo Liquors. Please drink responsibly. 21+ only.
         </p>
       </div>
 
       <div class="footer-right">
-        <a class="footer-link" href="#featured">Shop</a>
-        <a class="footer-link" href="#hours">Hours</a>
-        <a class="footer-link" href="#location">Location</a>
-        <a class="footer-link" href="contact.html">Contact</a>
+        <a class="footer-link" data-i18n="navShop" href="#featured">Shop</a>
+        <a class="footer-link" data-i18n="navHours" href="#hours">Hours</a>
+        <a class="footer-link" data-i18n="navLocation" href="#location">Location</a>
+        <a class="footer-link" data-i18n="navContact" href="contact.html">Contact</a>
       </div>
     </div>
   </footer>
